@@ -4,9 +4,7 @@ This is a [Bevy](https://github.com/bevyengine/bevy) library/plugin that impleme
 Currently the project is a work-in-progress, and unusable.
 
 ## Credits
-@hmeyer on GitHub created the tesselation library, which this library forks. Credit to him on the initial implementation of the dual contouring algorithm. Code written by them is labeled with a comment.
-
-I wanted to specifically integrate with Bevy, which is not a design goal of the initial project, so I forked it to create a new Bevy plugin.
+[@hmeyer](https://github.com/hmeyer) created the [tesselation](https://github.com/hmeyer/tessellation) library, which this library forks. Credit to them on the initial implementation of the dual contouring algorithm. This plugin is functionally much the same as the original library, but also aims to provide a smooth integration and developer experience with Bevy users.
 
 ## License
 Licensed under either of <a href="LICENSE-APACHE">Apache License, Version
