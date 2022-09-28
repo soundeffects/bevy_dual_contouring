@@ -1,16 +1,12 @@
 use crate::{
-    bitset::BitSet,
     cell_configs::CELL_CONFIGS,
-    mesh::Mesh,
     plane::Plane,
     qef,
-    vertex_index::{neg_offset, offset, Index, VarIndex, VertexIndex, EDGES_ON_FACE},
     AsUSize, ImplicitFunction, RealField,
 };
 use bbox::BoundingBox;
 use nalgebra as na;
 use num_traits::Float;
-use rayon::prelude::*;
 use std::{
     cell::{Cell, RefCell},
     cmp,
