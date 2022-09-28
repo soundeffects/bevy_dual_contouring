@@ -1,20 +1,21 @@
 [package]
-name = "tessellation"
-version = "0.8.2"
-authors = ["Henning Meyer <tutmann@gmail.com>"]
-edition = "2018"
+name = "bevy_dual_contouring"
+version = "0.0.1"
+authors = ["James Youngblood, james@youngbloods.org", "Henning Meyer <tutmann@gmail.com>"]
+edition = "2021"
 
-description = "3d tessellation library."
-repository = "https://github.com/hmeyer/tessellation"
+description = "Produce meshes using dual contouring for voxel data in the Bevy Engine."
+repository = "https://github.com/soundeffects/bevy_dual_contouring"
 readme = "README.md"
-keywords = ["tessellation", "3d", "manifold", "dual-contouring"]
+keywords = ["manifold", "dual-contouring", "bevy", "voxel"]
 license = "Apache-2.0 OR MIT"
 
 [lib]
-name = "tessellation"
+name = "bevy_dual_contouring"
 path = "src/lib.rs"
 
 [dependencies]
+bevy = { version = "0.8" }
 alga = "0.9"
 nalgebra = "0.22"
 rand = "0.7"
@@ -32,7 +33,3 @@ implicit3d = "0.14"
 name = "tessellation"
 path = "src/benches/tessellation.rs"
 harness = false
-
-[badges]
-travis-ci = { repository = "hmeyer/tessellation", branch = "master" }
-codecov = { repository = "hmeyer/tessellation", branch = "master", service = "github" }
